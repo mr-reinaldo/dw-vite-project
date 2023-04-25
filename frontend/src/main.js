@@ -1,9 +1,12 @@
 // Global CSS.
-import './style.css'
+import './style.css';
 
 // Bootstrap.
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+
+// Bootstrap Icons.
+import 'bootstrap-icons/font/bootstrap-icons.css';
 
 // Importando utilitários.
 import render from './utils/render.js';
@@ -13,13 +16,13 @@ import router from './utils/routes.js';
 const app = document.querySelector('#app');
 
 // Importando a página Home.
-import InitPage from './pages/Init.js';
+import Login from './pages/Login.js';
 import HomePage from './pages/Home.js';
 import AboutPage from './pages/About.js';
 
 
 // Definindo as rotas.
-router.on('/', () => render(InitPage(), app));
+router.on('/', () => render(Login(), app));
 router.on('/home', () => render(HomePage(), app));
 router.on('/about', () => render(AboutPage(), app));
 
