@@ -14,7 +14,7 @@ Repositório para estudos do Vite+VanillaJS
 
 ## Tela Inicial do Projeto.
 
-![Tela Inicial](screenshots\screenshot_login.png)
+![Tela Inicial](https://raw.githubusercontent.com/mr-reinaldo/dw-vite-project/dev/screenshots/screenshot_login.png)
 
 ## Links
 
