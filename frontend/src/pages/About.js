@@ -1,6 +1,6 @@
 const About = () => {
-    return `
-    <div class="container">
+    return /*html*/`
+    <div class="container-fluid">
         <div class="row">
             <div class="col">
                 <h1>About Page</h1>

@@ -1,6 +1,27 @@
 # dw-vite-project
 Repositório para estudos do Vite+VanillaJS
 
+## Instalação
+
+``` git clone https://github.com/mr-reinaldo/dw-vite-project.git ```
+
+``` cd dw-vite-project/frontend ```
+
+``` npm install ```
+
+``` npm run dev ```
+
+
+## Tela Inicial do Projeto.
+
+![Tela Inicial](screenshots\screenshot_login.png)
+
+## Links
+
+- [Vite](https://vitejs.dev/)
+- [Bootstrap](https://getbootstrap.com/)
+- [Bootstrap Icons](https://icons.getbootstrap.com/)
+
 
 # Extensões VSCode
 
