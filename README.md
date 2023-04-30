@@ -1,4 +1,5 @@
 # dw-vite-project
+
 Repositório para estudos do Vite+VanillaJS
 
 ## Instalação
@@ -11,8 +12,7 @@ Repositório para estudos do Vite+VanillaJS
 
 ``` npm run dev ```
 
-
-## Tela Inicial do Projeto.
+## Tela Inicial do Projeto
 
 ![Tela Inicial](https://raw.githubusercontent.com/mr-reinaldo/dw-vite-project/dev/screenshots/screenshot_login.png)
 
@@ -22,8 +22,7 @@ Repositório para estudos do Vite+VanillaJS
 - [Bootstrap](https://getbootstrap.com/)
 - [Bootstrap Icons](https://icons.getbootstrap.com/)
 
-
-# Extensões VSCode
+## Extensões VSCode
 
 - [Vite](https://marketplace.visualstudio.com/items?itemName=antfu.vite)
 - [Inline HTML](https://marketplace.visualstudio.com/items?itemName=pushqrdx.inline-html)

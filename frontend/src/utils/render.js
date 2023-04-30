@@ -3,4 +3,5 @@ const render = (content, target) => {
     target.innerHTML = content;
 }
 
+
 export default render;
