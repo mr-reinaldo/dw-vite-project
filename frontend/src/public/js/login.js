@@ -1,6 +1,6 @@
-const form = document.querySelector('form.needs-validation');
-const btnLogin = document.querySelector('button#btnLogin');
-const btnRegister = document.querySelector('button#btnRegister');
+const form = document.querySelector('form#formLogin');
+const btnLogin = document.querySelector('form#formLogin button#btnLogin');
+const btnRegister = document.querySelector('form#formLogin button#btnRegister');
 
 // Adiciona o evento de click no botão de login
 btnLogin.addEventListener('click', (event) => {
@@ -11,6 +11,8 @@ btnLogin.addEventListener('click', (event) => {
     }
 
     form.classList.add('was-validated');
+
+    // window.location.href = '/home';
 
 });
 

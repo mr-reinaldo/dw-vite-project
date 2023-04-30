@@ -12,9 +12,11 @@ Repositório para estudos do Vite+VanillaJS
 
 ``` npm run dev ```
 
-## Tela Inicial do Projeto
+## Tela do Projeto
 
-![Tela Inicial](https://raw.githubusercontent.com/mr-reinaldo/dw-vite-project/dev/screenshots/screenshot_login.png)
+![Tela de Autenticação e Registro](./screenshots/gif/auth_pages.gif)
+
+![Telas Home e About](./screenshots/gif/home_pages.gif)
 
 ## Links
 

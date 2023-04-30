@@ -1,5 +1,5 @@
 //======================================================
-// HTML Template
+// Inline HTML Template
 //======================================================
 
 const Register = () => {
@@ -13,7 +13,7 @@ const Register = () => {
                     Cadastro
                 </div>
                 <div class="card-body m-4">
-                    <form class="needs-validation" novalidate>
+                    <form class="needs-validation" novalidate id="formRegister">
                         <label for="nomeUsuario" class="fw-bold">Nome de Usuário:</label>
                         <div class="form-group">
                             <div class="input-group mb-3">
@@ -47,12 +47,12 @@ const Register = () => {
                                     aria-describedby="senha" name="senhaCadastro" minlength="6" required>
                                      <!-- Bloco de Validação -->
                                 <div class="invalid-feedback">
-                                    Por favor, digite uma senha acima de 6 caracteres.
+                                    Por favor, digite uma senha acima de 6 caracteres ou mais.
                                 </div>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-md-6 mb-3">
                                 <button type="button" class="btn btn-danger w-100" id="btnCancel"><i class="bi bi-person-fill-x"></i>
                                 Cancelar
                                 </button>

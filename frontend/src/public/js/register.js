@@ -1,24 +1,28 @@
-const form = document.querySelector('form.needs-validation');
-const btnCancel = document.querySelector('button#btnCancel');
-const btnRegister = document.querySelector('button#btnRegister');
+const form = document.querySelector('form#formRegister');
+const btnCancel = document.querySelector('form#formRegister button#btnCancel');
+const btnRegister = document.querySelector('form#formRegister button#btnRegister');
 
 
 // Adiciona o evento de click no botão de cancelar
-btnCancel.addEventListener('click', (event) => {
-    event.preventDefault();
+if (btnCancel) {
+    btnCancel.addEventListener('click', (event) => {
+        event.preventDefault();
 
-    // Redireciona para a página de login.
-    window.location.href = '/';
-});
+        // Redireciona para a página de login.
+        window.location.href = '/';
+    });
+}
 
 
 // Adiciona o evento de click no botão de cadastro.
-btnRegister.addEventListener('click', (event) => {
-    event.preventDefault();
+if (btnRegister) {
+    btnRegister.addEventListener('click', (event) => {
+        event.preventDefault();
 
-    if (!form.checkValidity()) {
-        event.stopPropagation();
-    }
+        if (!form.checkValidity()) {
+            event.stopPropagation();
+        }
 
-    form.classList.add('was-validated');
-});
+        form.classList.add('was-validated');
+    });
+}

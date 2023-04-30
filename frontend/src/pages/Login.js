@@ -1,3 +1,7 @@
+//======================================================
+// Inline HTML Template
+//======================================================
+
 const Login = () => {
     return /*html*/ `
 <div class="container mt-5" id="loginPage">
@@ -8,7 +12,7 @@ const Login = () => {
                     Login
                 </div>
                 <div class="card-body m-5 vh-50">
-                    <form class="needs-validation" novalidate>
+                    <form class="needs-validation" novalidate id="formLogin">
                         <div class="form-group">
                             <label for="email" class="fw-bold">Email:</label>
                             <div class="input-group mb-3">

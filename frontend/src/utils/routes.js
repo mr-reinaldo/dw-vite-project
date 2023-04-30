@@ -7,7 +7,7 @@ import Navigo from 'navigo';
  * @param {boolean} hash - Define se o Navigo deve usar hash nas rotas.
  * @param {string} linksSelector - Seletor para os links.
  */
-const router = new Navigo("/", { hash: true, linksSelector: "a[href^='/']" });
+const router = new Navigo("/", { hash: false, linksSelector: 'a[href^="/"]' });
 
 
 export default router;

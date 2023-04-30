@@ -9,9 +9,9 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
 // Importando utilitários.
-import render from './utils/render.js';
-import renderWithScript from './utils/renderWithScript.js';
+import ContentRenderer from './utils/renders.js';
 import router from './utils/routes.js';
+
 
 // Instanciando a div #app.
 const app = document.querySelector('#app');
@@ -19,14 +19,38 @@ const app = document.querySelector('#app');
 // Importando a página Home.
 import Login from './pages/Login.js';
 import Register from './pages/Register.js';
+import HomePage from './pages/Home.js';
 import AboutPage from './pages/About.js';
 
 
-// Definindo as rotas.
-//router.on('/', () => render(Login(), app));
-router.on('/', () => renderWithScript(Login(), app, '/js/login.js'));
-router.on('/register', () => renderWithScript(Register(), app, '/js/register.js'));
-router.on('/about', () => render(AboutPage(), app));
+// Configurando o renderizador de conteúdo.
+const contentRendererAuth = new ContentRenderer(app, { renderNavbar: false });
+const contentRendererPages = new ContentRenderer(app, { renderNavbar: true });
 
-// Inicializando o Navigo e renderizando a página inicial.
+
+// Configurando as rotas.
+router.on({
+    '/': () => {
+        contentRendererAuth.render(Login(), '/js/login.js');
+    }
+});
+
+router.on({
+    '/register': () => {
+        contentRendererAuth.render(Register(), '/js/register.js');
+    }
+});
+
+router.on({
+    '/home': () => {
+        contentRendererPages.render(HomePage(), '');
+    }
+});
+
+router.on({
+    '/about': () => {
+        contentRendererPages.render(AboutPage(), '');
+    }
+});
+
 router.resolve();
