@@ -1,18 +1,32 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('/fonts/Roboto-Regular.ttf') format('truetype');
+}
+
+body {
+    font-family: 'Roboto', sans-serif !important;
+}
+
+/* Tamanho da tela de 50% da altura da tela */
 .vh-50 {
     height: 50vh;
 }
 
+/* Tamanho da tela de 60% da altura da tela */
 .vh-60 {
     height: 60vh;
 }
+/* Tamanho da tela de 70% da altura da tela */
 .vh-70 {
     height: 70vh;
 }
 
+/* Tamanho da tela de 80% da altura da tela */
 .vh-80 {
     height: 80vh;
 }
 
+/* Tamanho da tela de 90% da altura da tela */
 .vh-90 {
     height: 90vh;
 }
