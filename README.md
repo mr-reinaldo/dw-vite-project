@@ -111,6 +111,6 @@ export default {
 }
 ```
 
-* **root**: Define a pasta raiz do projeto, por padrão o Vite utiliza a pasta `public` como pasta raiz, mas como estamos utilizando o Bootstrap 5, precisamos que o Vite utilize a pasta `src` como pasta raiz, pois o Bootstrap 5 utiliza a pasta `src` para armazenar os arquivos SASS e JS.
+* **root**: A propriedade `root` define a pasta onde o Vite irá buscar os arquivos do projeto.
 
 * **build**: Define as configurações de build do projeto, a propriedade `outDir` define a pasta onde o Vite irá gerar os arquivos de build, a propriedade `minify` define se o Vite irá minificar os arquivos de build.
